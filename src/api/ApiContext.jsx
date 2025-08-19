@@ -9,7 +9,7 @@ import { useAuth } from "../auth/AuthContext";
 
 export const API = "https://fitnesstrac-kr.herokuapp.com/api";
 
-const ApiContext = createContext();
+export const ApiContext = createContext();
 
 export function ApiProvider({ children }) {
   const { token } = useAuth();
